@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio – Yacht Club Señalética</title>
+    <link rel="stylesheet" href="yatchclub.css">
+</head>
+
+<body>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <section class="yacht-section">
+        <div class="top-shapes">
+            <div class="shape-left"></div>
+            <h1 class="title">YATCH CLUB <br> SEÑALÉTICA</h1>
+            <div class="shape-right"></div>
+        </div>
+
+        <p class="description">
+            El Yacht Club Paysandú necesitaba modernizar su identidad visual exterior y mejorar la señalética del 
+            establecimiento. La señalización existente era limitada, poco coherente y no transmitía la imagen de modernidad, 
+            solidez y accesibilidad que el club buscaba proyectar. La consigna del trabajo consistía en desarrollar un 
+            sistema completo de señalética y rediseño visual que respetara su tradición náutica pero que incorporara una 
+            estética actual y funcional en equipo.
+        </p>
+
+        <p class="duration"><strong>DURACIÓN DEL PROYECTO:</strong> 2 meses</p>
+
+        <p class="aprendizaje">
+            <strong>APRENDIZAJE:</strong> Aprendí a diseñar señalética funcional y clara, considerando el entorno real y 
+            los materiales adecuados para un espacio como el Yacht Club. Mejoré en la creación de pictogramas, el uso de 
+            retículas y la construcción de un sistema visual coherente.
+        </p>
+
+        <div class="logo-container">
+            <img src="img/logo yatch club.png"
+                 alt="Logo Yacht Club" class="yacht-logo">
+        </div>
+    </section>
+ <section class="double-gallery">
+    <div class="gallery-item">
+        <img src="img/tabla de pictogramas.png" onclick="openModal(this.src)">
+    </div>
+
+    <div class="gallery-item">
+        <img src="img/reticula.png" onclick="openModal(this.src)">
+    </div>
+</section>
+<!-- MODAL PARA VER IMÁGENES GRANDES -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="fullImage">
+</div>
+<script>
+function openModal(src) {
+    document.getElementById("imageModal").style.display = "block";
+    document.getElementById("fullImage").src = src;
+}
+
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+}
+</script>
+<section class="mockup-section">
+    <img src="img/fondi transparente.png"Fondo" class="fondo-opacidad">
+
+    <div class="mockup-grid">
+        <div class="mockup-item">
+            <img src="img/mockup yatch.jpg" alt="Mockup 1">
+        </div>
+
+        <div class="mockup-item">
+            <img src="img/mockup 2.jpg" alt="Mockup 2">
+        </div>
+
+        <div class="mockup-item">
+            <img src="img/mockup 3.jpg" alt="Mockup 3">
+        </div>
+    </div>
+</section>
+<!-- BOTÓN NEGRO -->
+<button class="btn-info" onclick="toggleInfo()">MAS INFORMACION</button>
+
+<!-- SECCIÓN OCULTA -->
+<section id="info-section">
+    <div class="grid">
+
+        <!-- 1. CONTEXTO -->
+        <div class="box">
+            <h2>CONTEXTO</h2>
+            <p>
+                El Yacht Club Paysandú necesitaba modernizar toda su identidad visual exterior
+                y mejorar la señalética del lugar. La señalización que tenían era limitada,
+                poco coherente y no transmitía la imagen de modernidad, solidez y accesibilidad
+                que el club quería proyectar. El proyecto consistió en desarrollar un sistema
+                completo de señalética y un rediseño visual que respetara su tradición náutica,
+                pero con una estética actual, funcional y creada en equipo.
+            </p>
+            <div class="circle-num">1</div>
+        </div>
+
+        <!-- 2. OBJETIVO -->
+        <div class="box">
+            <h2>OBJETIVO</h2>
+            <p>
+                El objetivo fue crear un sistema de señalética claro, coherente y fácil de entender,
+                que mejorara la experiencia del usuario dentro del club y al mismo tiempo reforzara
+                la identidad institucional con un estilo moderno y ordenado.
+            </p>
+            <div class="circle-num">2</div>
+        </div>
+
+        <!-- 3. PROCESO -->
+        <div class="box">
+            <h2>PROCESO</h2>
+            <p>
+                Primero analizamos el estado actual de la señalética y detecté problemas de legibilidad,
+                ubicación y coherencia visual. Después definimos un estilo basado en la identidad náutica
+                del club, creando pictogramas nuevos, retículas, paletas de color y tipografías apropiadas.
+                Luego diseñamos las señales aplicadas al entorno real, considerando materiales, tamaños
+                y visibilidad. Finalmente unificamos todo en un sistema visual consistente.
+            </p>
+            <div class="circle-num">3</div>
+        </div>
+
+        <!-- 4. RESULTADO -->
+        <div class="box">
+            <h2>RESULTADO</h2>
+            <p>
+                El resultado fue una señalética moderna, clara y funcional que mejora la orientación dentro
+                del Yacht Club y transmite una imagen más profesional. Logré desarrollar pictogramas,
+                retículas y un sistema visual completo, manteniendo un equilibrio entre tradición náutica
+                y estética actual.
+            </p>
+            <div class="circle-num">4</div>
+        </div>
+
+    </div>
+</section>
+<script src="script.js"></script>
+
+
+
+
+
+
+</body>
+</html>

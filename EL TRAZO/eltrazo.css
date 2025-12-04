@@ -1,0 +1,309 @@
+/* Fondo general blanco */
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal centrado */
+.main-container {
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* Título */
+.trazo-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Texto descriptivo */
+.trazo-text {
+    width: 60%;
+    margin: 20px auto 40px auto;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #222;
+    text-align: left;
+
+}
+
+/* Contenedor del dibujo */
+.trazo-img-container {
+    position: relative;
+    width: 380px;          /* Igual al tamaño del diseño */
+    height: 380px;
+    margin: 0 auto;
+}
+
+/* Mancha negra */
+.trazo-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Logo encima */
+.trazo-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 55%;
+    transform: translate(-50%, -50%);
+}
+/** CONTENEDOR GENERAL **/
+.mockups-section {
+  position: relative;
+  padding: 60px 0;
+}
+
+/** MARIPOSAS **/
+.butterfly {
+  width: 90px;
+  position: absolute;
+}
+
+/* Arriba */
+.top-left { top: 0; left: 20px; }
+.top-center { top: 0; left: 50%; transform: translateX(-50%); }
+.top-right { top: 0; right: 20px; }
+
+/* Abajo */
+.bottom-left { bottom: 0; left: 40px; }
+.bottom-center { bottom: 0; left: 50%; transform: translateX(-50%); }
+.bottom-right { bottom: 0; right: 40px; }
+
+/** CONTENEDOR DE MOCKUPS **/
+.mockups-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/** CUADRADOS **/
+.mockup-box {
+  width: 320px;
+  height: 320px;
+  background: #f1f1f1;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+/** IMÁGENES DE MOCKUP **/
+.mockup-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.grid-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.grid-item {
+  width: 330px;     /* TAMAÑO DEL CUADRADO */
+  height: 330px;
+  background: #f1f1f1;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-logo-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 80px 0;
+}
+
+.top-image img {
+    width: 600px;      /* tamaño igual al ejemplo */
+    height: auto;
+    border-radius: 10px;
+}
+
+.bottom-logo img {
+    width: 280px;      /* LOGO GRANDE — podés aumentar si querés */
+    margin-top: 60px;
+}
+/* Botón negro */
+.btn-info-2 {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 20px 50px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 30px;
+    clip-path: polygon(6% 0, 100% 0, 94% 100%, 0 100%);
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.btn-info-2:hover {
+    background: rgb(30, 30, 30);
+}
+
+/* Sección inicialmente oculta */
+#info-section-2 {
+    display: none;
+    margin-top: 30px;
+    background: black;
+    padding: 30px;
+}
+
+/* Grilla 2x2 */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Cuadros */
+.box-2 {
+    border: 3px solid white;
+    padding: 25px;
+    min-height: 280px;
+    position: relative;
+    color: white;
+}
+
+.box-2 h2 {
+    text-align: center;
+    color: white;
+    font-weight: 800;
+}
+
+/* Círculo */
+.circle-num-2 {
+    width: 70px;
+    height: 70px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.center-btn {
+    text-align: center;
+}
+/* SECCIÓN BOCETOS */
+.seccion-bocetos {
+    background: #f4ecd9; /* beige cálido tipo papel */
+    padding: 80px 20px;
+    position: relative;
+    border-top: 6px solid #b79a78;
+}
+
+/* TÍTULO */
+.titulo-bocetos {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    color: #5a4633;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.titulo-bocetos::after {
+    content: "";
+    width: 120px;
+    height: 4px;
+    background: #d3b08c;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%) rotate(-2deg);
+    border-radius: 2px;
+}
+
+/* CONTENEDOR ARTÍSTICO */
+.contenedor-bocetos {
+    max-width: 900px;
+    margin: auto;
+    background: #fff8ee;
+    padding: 20px;
+    border-radius: 10px;
+    border: 4px solid #d9c3a8;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* EFECTO PAPEL ROTO */
+.contenedor-bocetos::before,
+.contenedor-bocetos::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 14px;
+    background: url('https://i.imgur.com/cxZ7aVi.png'); /* textura papel rasgado */
+    background-size: cover;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.35;
+}
+
+.contenedor-bocetos::before {
+    top: -8px;
+}
+
+.contenedor-bocetos::after {
+    bottom: -8px;
+    transform: translateX(-50%) rotate(180deg);
+}
+
+/* IMAGEN DE BOCETOS */
+.img-bocetos {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* TEXTO EXPLICATIVO */
+.texto-bocetos {
+    text-align: center;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 30px auto 0;
+    color: #6b5847;
+}
+
+
+
+
+
+

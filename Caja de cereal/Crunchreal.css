@@ -1,0 +1,305 @@
+/* ----- SECCIÓN PRINCIPAL (HERO) ----- */
+.hero-principal {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Texto principal */
+.hero-texto h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.hero-texto h2 {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+/* Párrafos */
+.descripcion {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+/* ✔ SEPARACIÓN ENTRE DESCRIPCIÓN Y DURACIÓN */
+.duracion {
+    margin-top: 25px !important;
+    font-size: 18px;
+    text-align: left;
+}
+
+.aprendizaje {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* ----- RECTÁNGULO FINAL DOBLE ----- */
+.rectangulo-final-doble {
+    width: 100%;
+    margin-top: 60px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: #f5e7d3; /* mismo estilo que antes */
+    border-top: 4px solid #c79f6c;
+}
+
+.rectangulo-final-doble .rect-uno,
+.rectangulo-final-doble .rect-dos {
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 3px solid #c79f6c;
+}
+
+.rectangulo-final-doble img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@font-face {
+    font-family: "KindDaily";
+    src: url("KindDaily.ttf");
+}
+
+.cereal-section {
+    width: 100%;
+    text-align: center;
+    font-family: "KindDaily", sans-serif;
+}
+
+/* CONTENEDOR DEL TÍTULO */
+.cereal-top {
+    width: 100%;
+    padding: 60px 0 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* TEXTO */
+.cereal-title {
+    font-size: 80px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 4px;
+    display: flex;
+    gap: 60px;
+}
+
+/* BLOQUES DE COLOR DEL TÍTULO */
+.bloque {
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+/* Colores EXACTOS como la imagen */
+.bloque-1 {
+    background-color: #bd606b;   /* rosa rojizo */
+}
+
+.bloque-2 {
+    background-color: #9d7053;   /* marrón */
+}
+
+.bloque-3 {
+    background-color: #b7aa6c;   /* beige verdoso */
+}
+
+/* CAJAS DE CEREAL */
+.cereal-images {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: #33c6ff;
+    padding: 30px 0;
+}
+
+.cereal-box {
+    width: 280px;
+    height: auto;
+}
+
+
+/* PARTE INFERIOR CELESTE */
+.cereal-bottom {
+    background: #33c6ff;
+    padding: 20px 0 60px 0;
+}
+
+.sabores {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    font-weight: 900;
+}
+/* Botón negro */
+.btn-info-2 {
+    display: block;        /* <-- esto lo centra */
+    margin: 0 auto 30px;   /* <-- centrado automático */
+    background: black;
+    color: white;
+    padding: 20px 50px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    clip-path: polygon(6% 0, 100% 0, 94% 100%, 0 100%);
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.btn-info-2:hover {
+    background: rgb(30, 30, 30);
+}
+
+/* Sección inicialmente oculta */
+#info-section-2 {
+    display: none;
+    margin-top: 30px;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+/* Grilla 2x2 */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Cuadros */
+.box-2 {
+    border: 3px solid rgb(0, 0, 0);
+    padding: 25px;
+    min-height: 300px;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+
+.box-2 h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+}
+
+/* Círculo */
+.circle-num-2 {
+    width: 70px;
+    height: 70px;
+    background: rgb(1, 1, 1);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* SECCIÓN DEL CEREAL */
+.seccion-cereal {
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #f3e5d0, #e0c3a0); /* crema suave */
+    text-align: center;
+}
+
+.titulo-cereal {
+    font-size: 32px;
+    font-weight: 900;
+    color: #4a2a16;  /* marrón oscuro */
+    margin-bottom: 40px;
+}
+
+/* CONTENEDOR CON SOMBRA */
+.contenedor-cereal {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 4px solid #b8723a; /* borde marrón claro */
+}
+
+/* IMAGEN */
+.img-cereal {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* SECCIÓN DEL TROQUEL */
+.seccion-troquel {
+    padding: 90px 20px;
+    background: #2b1f16; /* marrón muy oscuro */
+    position: relative;
+}
+
+/* DECORACIÓN DIAGONAL */
+.seccion-troquel::before,
+.seccion-troquel::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 140px;
+    background: rgba(255, 255, 255, 0.05);
+    transform: skewY(-6deg);
+}
+
+.seccion-troquel::before {
+    top: 0;
+    left: 0;
+}
+
+.seccion-troquel::after {
+    bottom: 0;
+    right: 0;
+}
+
+/* TÍTULO */
+.titulo-troquel {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    color: #f6d7b5; /* crema */
+    margin-bottom: 40px;
+}
+
+/* CONTENEDOR DE LA IMAGEN */
+.contenedor-troquel {
+    max-width: 1000px;
+    margin: auto;
+    background: #3b2d23; /* marrón medio */
+    padding: 25px;
+    border-radius: 14px;
+    border: 3px solid #c08a5a; /* borde beige marrón */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* IMAGEN DEL TROQUEL */
+.img-troquel {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+
+

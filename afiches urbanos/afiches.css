@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.afiches-contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.titulo {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    text-align: left;
+    font-size: 18px;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.info {
+    font-size: 18px;
+    text-align: left;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.carrusel {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.afiche {
+    width: 250px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efecto Zoom */
+.afiche:hover {
+    transform: scale(1.35);
+    z-index: 10;
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.35);
+}
+.seccion-imagen {
+    width: 100%;
+    margin-top: 40px; /* separación con los afiches */
+    display: flex;
+    justify-content: center; /* centra la imagen */
+}
+
+.seccion-imagen img {
+    width: 80%;  /* ajustá el tamaño que quieras */
+    max-width: 900px;
+    border-radius: 10px; /* opcional: bordes suaves */
+}
+/* Botón estilo diagonal */
+.btn-info {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 15px 40px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    clip-path: polygon(6% 0, 100% 0, 94% 100%, 0 100%);
+    transition: 0.3s;
+    border: 2px solid rgb(180, 0, 0);
+}
+
+.btn-info:hover {
+    background: rgb(40, 40, 40);
+}
+
+/* Oculto inicialmente */
+#info-section {
+    margin-top: 40px;
+    display: none;
+}
+
+/* Grilla de 4 cuadros */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.box {
+    border: 3px solid black;
+    padding: 25px;
+    min-height: 260px;
+    position: relative;
+}
+
+.box h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.circle-num {
+    width: 70px;
+    height: 70px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.center-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+

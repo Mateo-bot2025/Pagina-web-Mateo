@@ -1,0 +1,224 @@
+/* --- ESTILOS GENERALES --- */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* --- ÁREA DE TEXTO PRINCIPAL --- */
+.hero {
+    padding: 60px 10%;
+}
+
+/* Título centrado */
+.hero h1 {
+    text-align: center;      /* ← solo el título centrado */
+    font-size: 38px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+/* Todo el texto alineado a la izquierda */
+.descripcion {
+    max-width: 900px;
+    margin: 20px auto;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: left;        /* ← textos alineados a la izquierda */
+}
+
+/* --- CONTENEDOR DE IMAGEN --- */
+.contenedor-imagen {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    background: white;
+}
+
+.marco {
+    width: 380px;
+    padding: 20px;
+    background: black;
+    border-radius: 8px;
+}
+
+.marco img {
+    width: 100%;
+    display: block;
+}
+
+/* --- FORMAS DECORATIVAS INFERIORES (OPCIONAL) --- */
+.contenedor-imagen {
+    position: relative;
+}
+
+.contenedor-imagen::before,
+.contenedor-imagen::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    width: 50%;
+    height: 80px;
+    background: #111;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+.contenedor-imagen::before {
+    left: 0;
+}
+
+.contenedor-imagen::after {
+    right: 0;
+    transform: scaleX(-1);
+}
+.mockup-section {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: white;
+    overflow: hidden;
+}
+
+/* --- TRIÁNGULO DIAGONAL SUPERIOR --- */
+.shape-diagonal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 60%;
+    background: black;
+    clip-path: polygon(0 0, 100% 0, 40% 100%, 0 100%);
+}
+
+/* --- MOCKUPS --- */
+.mockup-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Mockup izquierdo con inclinación */
+.mockup-left {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 280px;
+    height: 350px;
+    background: black;
+    border: 2px solid white;
+    transform: rotate(-35deg);
+    overflow: hidden;
+}
+.mockup-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Mockup derecho vertical */
+.mockup-right {
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    width: 350px;
+    height: 450px;
+    background: black;
+    border: 2px solid white;
+    overflow: hidden;
+}
+.mockup-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- RECTÁNGULO NEGRO INFERIOR --- */
+.bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    background: black;
+}
+body {
+    background: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Botón negro */
+.btn-info {
+    display: block;
+    background: black;
+    color: white;
+    padding: 20px 60px;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin: 40px auto;
+    clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
+}
+
+/* Sección oculta */
+#info-section {
+    display: none;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* Grilla de 2x2 */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* Cuadros */
+.box {
+    background: #ffffff;
+    border: 3px solid #b5b5b5;
+    padding: 25px;
+    position: relative;
+    min-height: 260px;
+}
+
+.box h2 {
+    text-align: center;
+    color: black;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.box p {
+    color: black;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Círculo */
+.circle-num {
+    width: 65px;
+    height: 65px;
+    background: white;
+    border: 3px solid #000;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

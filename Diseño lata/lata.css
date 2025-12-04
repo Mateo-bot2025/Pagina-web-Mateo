@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+.contenedor {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+/* Texto principal */
+.texto-descripcion {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 45px;
+}
+
+/* Duración */
+.duracion {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* Aprendizaje */
+.aprendizaje {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+/* Imagen centrada */
+.img-centro {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.img-centro img {
+    width: 60%;
+    max-width: 700px;
+}
+.mockup-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.mockup-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fondo amarillo SOLO en el mockup 2 */
+.mockup-yellow {
+    background: #FFD500;     /* Amarillo fuerte */
+    padding: 20px;           /* Espacio alrededor del mockup */
+    border-radius: 12px;     
+}
+
+.mockup-item {
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.mockup-item:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+/* ------------------ DERECHA ARRIBA ------------------ */
+.right-top {
+    background: #ffe600;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-can {
+    width: 350px;
+    transform: rotate(-20deg);
+}
+
+/* ------------------ DERECHA ABAJO ------------------ */
+.right-bottom {
+    background: #fff;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.bottom-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Botón negro */
+.btn-info-2 {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 20px 50px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 30px;
+    clip-path: polygon(6% 0, 100% 0, 94% 100%, 0 100%);
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.btn-info-2:hover {
+    background: rgb(30, 30, 30);
+}
+
+/* Sección inicialmente oculta */
+#info-section-2 {
+    display: none;
+    margin-top: 30px;
+    background: black;
+    padding: 30px;
+}
+
+/* Grilla 2x2 */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Cuadros */
+.box-2 {
+    border: 3px solid white;
+    padding: 25px;
+    min-height: 280px;
+    position: relative;
+    color: white;
+}
+
+.box-2 h2 {
+    text-align: center;
+    color: white;
+}
+
+/* Círculo */
+.circle-num-2 {
+    width: 70px;
+    height: 70px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.center-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
